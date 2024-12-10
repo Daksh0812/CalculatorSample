@@ -14,10 +14,10 @@
             background-color: #f4f4f9;
             margin: 0;
         }
-        .calculator {
-            background-color: #fff;
+        .C {
+            background-color: green;
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px red;
             padding: 20px;
             width: 280px;
             text-align: center;
@@ -30,7 +30,7 @@
             padding: 10px;
             margin-bottom: 10px;
             border-radius: 5px;
-            border: 1px solid #ccc;
+            border: 1px solid blue;
         }
         button {
             width: 60px;
@@ -38,14 +38,14 @@
             font-size: 24px;
             margin: 5px;
             border-radius: 5px;
-            border: 1px solid #ccc;
-            background-color: #f0f0f0;
+            border: 1px solid pink;
+            background-color: rgb(122, 41, 54);
             cursor: pointer;
         }
         button:hover {
-            background-color: #e0e0e0;
+            background-color: pink;
         }
-        .row {
+        .R {
             display: flex;
             justify-content: center;
         }
@@ -53,28 +53,28 @@
 </head>
 <body>
 
-<div class="calculator">
+<div class="C">
     <input type="text" id="display" disabled>
     
-    <div class="row">
+    <div class="R">
         <button onclick="appendToDisplay('1')">1</button>
         <button onclick="appendToDisplay('2')">2</button>
         <button onclick="appendToDisplay('3')">3</button>
         <button onclick="appendToDisplay('+')">+</button>
     </div>
-    <div class="row">
+    <div class="R">
         <button onclick="appendToDisplay('4')">4</button>
         <button onclick="appendToDisplay('5')">5</button>
         <button onclick="appendToDisplay('6')">6</button>
         <button onclick="appendToDisplay('-')">-</button>
     </div>
-    <div class="row">
+    <div class="R">
         <button onclick="appendToDisplay('7')">7</button>
         <button onclick="appendToDisplay('8')">8</button>
         <button onclick="appendToDisplay('9')">9</button>
         <button onclick="appendToDisplay('*')">*</button>
     </div>
-    <div class="row">
+    <div class="R">
         <button onclick="appendToDisplay('0')">0</button>
         <button onclick="clearDisplay()">C</button>
         <button onclick="calculateResult()">=</button>
